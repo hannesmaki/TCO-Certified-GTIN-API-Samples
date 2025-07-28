@@ -71,6 +71,16 @@ retrieved product data is saved as a `.json` file in the same folder as the scip
 
 
 ```
+### Requirements
 
+Install required package:
+```bash
+pip install requests
+```
+Python 3.7 or later is recommended.
 
+### Security Notes
+
+* Password is securely hidden using getpass
+* API token is used only in memory (not stored)
 
