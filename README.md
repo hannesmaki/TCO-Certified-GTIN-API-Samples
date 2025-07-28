@@ -12,21 +12,22 @@ It prints product summaries in the terminal and saves full product data as a `.j
 ---
 ### Features
 
-- Secure login with username and hidden password prompt
+
+- Login with the username and password provided by TCO Development.
 - Fetch:
   - A specific page (`--page 2`)
   - A range of pages (`--page_range 1-5`)
   - All available pages (default)
 - Output:
   - Pretty-printed raw JSON
-  - Terminal display of `name`, `gtin`, `certificateId`
+    
 - Works from command line or in automated pipelines
-
 ---
-
 ### Usage
 
 ```bash
 python fetch_gtin.py [OPTIONS]
+
+
 
 
