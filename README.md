@@ -20,6 +20,17 @@ It prints product summaries in the terminal and saves full product data as a `.j
   - All available pages (default)
 - Output:
   - Pretty-printed raw JSON
+ 
+### Command line Options
+
+Option	        Description	                                        Example
+--product_type	Product category to fetch (default: Desktops)     	--product_type Displays
+--jsonld	      Include JSON-LD context in the API response	        --jsonld
+--page	        Fetch only a specific page	                        --page 2
+--page_range	  Fetch a range of pages (inclusive)	                --page_range 1-4
+--output	      Filename for saved results (default: products.json)	--output my_products.json
+
+Use either --page or --page_range, not both.
     
 - Works from command line or in automated pipelines
 ---
