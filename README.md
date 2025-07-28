@@ -1,17 +1,16 @@
 # TCO-Certified-GTIN-API-Samples
 This repository contains example scripts on how to retrieve data from the TCO Certified GTIN API 
 
+## Examples
 
-
-# TCO Certified API Product Fetcher
+## Python example
 
 This Python script allows you to authenticate with the **TCO Certified API** and retrieve certified product data (e.g., Desktops, Displays) using secure credentials and flexible pagination options.
 
 It prints product summaries in the terminal and saves full product data as a `.json` file.
 
 ---
-
-## Features
+### Features
 
 - Secure login with username and hidden password prompt
 - Fetch:
@@ -25,7 +24,7 @@ It prints product summaries in the terminal and saves full product data as a `.j
 
 ---
 
-## Usage
+### Usage
 
 ```bash
 python fetch_gtin.py [OPTIONS]
