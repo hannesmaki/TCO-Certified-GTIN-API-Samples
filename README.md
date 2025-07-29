@@ -1,17 +1,10 @@
 # TCO-Certified-GTIN-API-Samples
-This repository contains example scripts on how to retrieve data from the TCO Certified GTIN API 
+This repository contains example scripts on how to retrieve data from the **TCO Certified GTIN API**.
 
-## Python example
-
-This Python script allows you to authenticate with the **TCO Certified API** and retrieve certified product data (e.g., Desktops, Displays) using secure credentials and flexible pagination options.
-
-It saves retrieved product data as a `.json` file in the same folder as the scipt is located in. 
+You can either use them as reference when developing your own implementations, or download the scripts and run them as a quick plug-and-play solution to retrieve data from the API. 
 
 ---
-### Features
 
-- Login with the username and password provided by TCO Development.
- 
 ### Command line options
 
 | Option	        |Description	                                        |Example                     |
@@ -26,7 +19,19 @@ It saves retrieved product data as a `.json` file in the same folder as the scip
 Use either --page or --page_range, not both.
 
 ---
-### Usage examples
+# Usage examples
+
+## Python
+
+### Requirements
+
+Install required package:
+```bash
+pip install requests
+```
+`Python 3.7` or later is recommended.
+
+### Example requests
 
 Base
 ```bash
@@ -42,7 +47,36 @@ Fetch pages 1 through 5 of Displays with JSON-LD and custom output:
 ```bash
 python fetch_gtin.py --product_type Displays --jsonld --page_range 1-5 --output displays.json
 ```
-### Output
+## JavaScript
+
+### Requirements
+
+You'll need to have `node` and `node package manager` installed
+
+
+Install required package:
+```bash
+npm install axios commander prompt-sync
+```
+
+### Example requests
+
+Base
+```bash
+node fetch_gtin.py [OPTIONS]
+```
+
+Fetch only page 2 of Displays:
+```bash
+node fetch_gtin.py --product_type Displays --page 2
+```
+
+Fetch pages 1 through 5 of Displays with JSON-LD and custom output:
+```bash
+node fetch_gtin.py --product_type Displays --jsonld --page_range 1-5 --output displays.json
+```
+
+## Output
 retrieved product data is saved as a `.json` file in the same folder as the scipt is located in. 
 
 ```json
@@ -71,13 +105,7 @@ retrieved product data is saved as a `.json` file in the same folder as the scip
 
 
 ```
-### Requirements
 
-Install required package:
-```bash
-pip install requests
-```
-Python 3.7 or later is recommended.
 
 ### Security Notes
 
