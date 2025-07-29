@@ -181,20 +181,3 @@ if __name__ == "__main__":
         page_range=args.page_range,
         output_file=args.output
     )
-
-
-    """
-    examples:
-    
-    # Fetch Desktops from page 1 with default output file
-    python script.py
-
-    
-    # Fetch Displays from page 3 with JSON-LD included
-    python script.py --product_type Displays --page 3 --jsonld
-
-    # Save to a custom file
-    python script.py --output my_certified_products.json
-    
-    
-    """
