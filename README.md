@@ -3,6 +3,12 @@ This repository contains example scripts on how to retrieve data from the **TCO 
 
 You can either use them as reference when developing your own implementations, or download the scripts and run them as a quick plug-and-play solution to retrieve data from the API. 
 
+
+
+> [!NOTE]
+> Read about the TCO Certified GTIN API and sign up for access [Here](https://industry.tcocertified.com/gtin-api/)
+
+
 ---
 
 > [!IMPORTANT]
