@@ -5,6 +5,9 @@ You can either use them as reference when developing your own implementations, o
 
 ---
 
+> [!IMPORTANT]
+The example scripts does NOT support jsonld=true since the looping of the pages uses the "meta" section of the responding JSON file wich is omitted in the JSONLD format.
+
 ### Command line options
 
 | Option	        |Description	                                        |Example                     |
